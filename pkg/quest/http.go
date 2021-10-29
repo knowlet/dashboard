@@ -33,6 +33,8 @@ func request(method, url, hostname string, body io.Reader, jar http.CookieJar) (
 	if err != nil {
 		return nil, err
 	}
+	client.CloseIdleConnections()
+	req.Close = true
 	return resp, nil
 }
 
@@ -58,6 +60,8 @@ func reqjson(method, url, hostname string, body io.Reader) (*http.Response, erro
 	if err != nil {
 		return nil, err
 	}
+	client.CloseIdleConnections()
+	req.Close = true
 	return resp, nil
 }
 
@@ -87,5 +91,7 @@ func reqBaseJson(method, url, hostname, token string, body io.Reader) (*http.Res
 	if err != nil {
 		return nil, err
 	}
+	client.CloseIdleConnections()
+	req.Close = true
 	return resp, nil
 }
