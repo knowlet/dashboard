@@ -1,0 +1,7 @@
+ip,hostname
+127.0.0.1:8081,chat.blueteam1.defense.hitcon
+127.0.0.1:8081,chat.blueteam2.defense.hitcon
+127.0.0.1:8081,chat.blueteam3.defense.hitcon
+127.0.0.1:8081,chat.blueteam4.defense.hitcon
+127.0.0.1:8081,chat.blueteam5.defense.hitcon
+127.0.0.1:8081,chat.blueteam6.defense.hitcon

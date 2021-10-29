@@ -1,0 +1,7 @@
+ip,hostname
+127.0.0.1:8081,git.blueteam1.defense.hitcon
+127.0.0.1:8081,git.blueteam2.defense.hitcon
+127.0.0.1:8081,git.blueteam3.defense.hitcon
+127.0.0.1:8081,git.blueteam4.defense.hitcon
+127.0.0.1:8081,git.blueteam5.defense.hitcon
+127.0.0.1:8081,git.blueteam6.defense.hitcon

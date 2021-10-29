@@ -1,0 +1,7 @@
+ip,hostname
+127.0.0.1:8081,chk.blueteam1.defense.hitcon
+127.0.0.1:8081,chk.blueteam2.defense.hitcon
+127.0.0.1:8081,chk.blueteam3.defense.hitcon
+127.0.0.1:8081,chk.blueteam4.defense.hitcon
+127.0.0.1:8081,chk.blueteam5.defense.hitcon
+127.0.0.1:8081,chk.blueteam6.defense.hitcon

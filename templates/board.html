@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Score Board</title>
+  <style>
+    body {
+      background-image: url("/assets/images/192.png");
+    }
+
+    .point {
+      position: absolute;
+      font-size: 6rem;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #team1 {
+      left: 350px;
+      top: 360px;
+    }
+
+    #team2 {
+      left: 860px;
+      top: 300px;
+    }
+
+    #team3 {
+      left: 1450px;
+      top: 360px;
+    }
+
+    #team4 {
+      left: 1450px;
+      top: 670px;
+    }
+
+    #team5 {
+      left: 900px;
+      top: 835px;
+    }
+
+    #team6 {
+      left: 350px;
+      top: 720px;
+    }
+  </style>
+</head>
+<body>
+  <div class="point" id="team1"></div>
+  <div class="point" id="team2"></div>
+  <div class="point" id="team3"></div>
+  <div class="point" id="team4"></div>
+  <div class="point" id="team5"></div>
+  <div class="point" id="team6"></div>
+</body>
+<script>
+  const get = () => {
+    fetch("/team/")  
+      .then(res => res.json())
+      .then(teams => teams.forEach((t, i) => {
+        document.getElementById(`team${i+1}`).textContent = t.score;
+      }));
+  }
+  get();
+  setInterval(get, 10000);
+</script>
+</html>

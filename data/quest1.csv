@@ -1,0 +1,7 @@
+ip,hostname
+127.0.0.1:8081,svn.blueteam1.defense.hitcon
+127.0.0.1:8081,svn.blueteam2.defense.hitcon
+127.0.0.1:8081,svn.blueteam3.defense.hitcon
+127.0.0.1:8081,svn.blueteam4.defense.hitcon
+127.0.0.1:8081,svn.blueteam5.defense.hitcon
+127.0.0.1:8081,svn.blueteam6.defense.hitcon
