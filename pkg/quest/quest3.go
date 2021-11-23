@@ -10,8 +10,7 @@ import (
 
 // OA
 func OA(db *gorm.DB, data []map[string]interface{}, ischeck bool) {
-	for idx, team := range data {
-		team["id"] = idx + 1 // team id begins from 1
+	for _, team := range data {
 		go func(t map[string]interface{}) {
 			// get login page
 			resp, err := request(

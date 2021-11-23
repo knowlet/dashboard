@@ -34,6 +34,7 @@ func CsvToMap(file io.Reader) []map[string]interface{} {
 			for i := 0; i < len(record); i++ {
 				line[header[i]] = record[i]
 			}
+			line["id"] = row
 			csvMap = append(csvMap, line)
 		}
 	}
